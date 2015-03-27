@@ -1,10 +1,11 @@
 class User(object):
-    def __init__(self, server, name, id, real_name, tz):
+    def __init__(self, server, name, id, real_name, tz, presence):
         self.tz = tz
         self.name = name
         self.real_name = real_name
         self.server = server
         self.id = id
+        self.presence
 
     def __eq__(self, compare_str):
         if self.id == compare_str or self.name == compare_str:
